@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{751cbf75-fe6b-414b-bc56-c27b65b2e1a4}</ProjectGuid>
-    <RootNamespace>My1IntroductionToUnitTests</RootNamespace>
+    <ProjectGuid>{265fc77d-5b13-4e2e-8f9e-6a5cf81f592b}</ProjectGuid>
+    <RootNamespace>PA2GetDistinctRealRootCountTests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>1_SynonymsTaskDecomposition</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1_SynonymsTaskDecomposition.cpp" />
+    <ClCompile Include="PA2_GetDistinctRealRootCountTests.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

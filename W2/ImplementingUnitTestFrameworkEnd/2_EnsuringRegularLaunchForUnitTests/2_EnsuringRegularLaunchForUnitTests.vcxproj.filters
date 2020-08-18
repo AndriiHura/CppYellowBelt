@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_SynonymsTaskDecomposition.cpp">
+    <ClCompile Include="2_EnsuringRegularLaunchForUnitTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

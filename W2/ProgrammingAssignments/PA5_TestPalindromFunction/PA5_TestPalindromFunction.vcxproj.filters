@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_SynonymsTaskDecomposition.cpp">
+    <ClCompile Include="PA5_TestPalindromFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

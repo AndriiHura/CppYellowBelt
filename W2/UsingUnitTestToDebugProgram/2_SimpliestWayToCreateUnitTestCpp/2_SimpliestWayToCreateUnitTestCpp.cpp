@@ -1,10 +1,29 @@
-// 1_IntroductionToUnitTests.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 2_SimpliestWayToCreateUnitTestCpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <cassert>
+
+using namespace std;
+
+int Sum(int x, int y) { 
+    if (x < 0) {
+        --x;
+    }
+    return x + y; 
+}
+
+void TestSum() {
+    assert(Sum(2, 3) == 5);
+    assert(Sum(-2, -3) == -5);
+    assert(Sum(-2, 0) == -2);
+    assert(Sum(-2, 2) == 0);
+    cout << "TestSum OK" << endl;
+}
 
 int main()
 {
+    TestSum();
     std::cout << "Hello World!\n";
 }
 
