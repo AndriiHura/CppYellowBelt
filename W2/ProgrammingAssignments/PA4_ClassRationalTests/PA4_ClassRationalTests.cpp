@@ -97,23 +97,23 @@ public:
 private:
     int fail_count = 0;
 };
-//
-//class Rational {
-//public:
-//    // Вы можете вставлять сюда различные реализации,
-//    // чтобы проверить, что ваши тесты пропускают корректный код
-//    // и ловят некорректный
-//
-//    Rational();
-//    Rational(int numerator, int denominator) {
-//    }
-//
-//    int Numerator() const {
-//    }
-//
-//    int Denominator() const {
-//    }
-//};
+
+class Rational {
+public:
+    // Вы можете вставлять сюда различные реализации,
+    // чтобы проверить, что ваши тесты пропускают корректный код
+    // и ловят некорректный
+
+    Rational();
+    Rational(int numerator, int denominator) {
+    }
+
+    int Numerator() const {
+    }
+
+    int Denominator() const {
+    }
+};
 
 void TestDefaultConstructor() {
     Rational r;
