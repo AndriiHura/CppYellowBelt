@@ -1,11 +1,39 @@
-// 1_DeclarationAndDefinitionConcepts.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// PA5_AllThePermutations.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <algorithm>
+#include <vector>
+#include <numeric>
+
+using namespace std;
+
+template<typename It>
+void PrintRange(It range_begin,
+	It range_end) {
+	for (auto it = range_begin;
+		it != range_end; ++it)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int Number;
+    cin >> Number;
+
+    vector<int> v(Number);
+    iota(rbegin(v), rend(v), 1);
+
+	
+	do {
+		PrintRange(begin(v), end(v));
+	} while (prev_permutation(begin(v), end(v)));
+     
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

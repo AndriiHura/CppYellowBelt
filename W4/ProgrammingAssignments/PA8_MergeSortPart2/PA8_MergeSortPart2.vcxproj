@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2d6765aa-a7a1-4aec-9cf7-e4a4ec6fdad8}</ProjectGuid>
-    <RootNamespace>PA3ImplementClassDeclaration</RootNamespace>
+    <ProjectGuid>{a2d2c7ac-1fa0-4c0e-9bad-888bbe137cf0}</ProjectGuid>
+    <RootNamespace>PA8MergeSortPart2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PA3_ImplementClassDeclaration.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="rectangle.h" />
+    <ClCompile Include="PA8_MergeSortPart2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

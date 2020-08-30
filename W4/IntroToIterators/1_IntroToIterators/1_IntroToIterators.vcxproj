@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2d6765aa-a7a1-4aec-9cf7-e4a4ec6fdad8}</ProjectGuid>
-    <RootNamespace>PA3ImplementClassDeclaration</RootNamespace>
+    <ProjectGuid>{7ce7a259-3912-4686-b198-94b9a4409889}</ProjectGuid>
+    <RootNamespace>My1IntroToIterators</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PA3_ImplementClassDeclaration.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="rectangle.h" />
+    <ClCompile Include="1_IntroToIterators.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
