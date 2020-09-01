@@ -1,7 +1,7 @@
 #pragma once
-class Rectangle {
+class Rect {
 public:
-    Rectangle(int width, int height);
+    Rect(int width, int height);
 
     int GetArea() const; 
 

@@ -1,36 +1,57 @@
-// PA3_ImplementClassDeclaration.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 3_OrderOfConstructingClassInstances.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 
 using namespace std;
 
-class Rect {
+struct Log {
+	Log(string name) : n(name) {
+		cout << "+ " << n << endl;
+	}
+	~Log() {
+		cout << "- " << n << endl;
+	}
+
+	string n;
+};
+
+struct Fruit {
+	Fruit(const string& t): l(t + " (Fruit)") {
+
+	}
+
+	const Log l = Log("Fruit");
+};
+
+struct Apple : public Fruit {
+	Apple(const string& t) : Fruit(t), l(t) {
+	}
+
+	const Log l;
+
+};
+
+class AppleTree {
 public:
-    Rect(int width, int height)
-    {
-        width_ = width;
-        height_ = height;
-    }
+	AppleTree(const string& t)
+		: type(t)
+		, a1(type + "a1")
+		, a2(type + "a2"){
 
-    int GetArea() const {
-        return width_ * height_;
-    }
+	}
 
-    int GetPerimeter() const {
-        return 2 * (width_ + height_);
-    }
+	string type;
+	Apple a1;
+	Apple a2;
 
-    int GetWidth() const { return width_; }
-    int GetHeight() const { return height_; }
-
-private:
-    int width_, height_;
 };
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	AppleTree at("AppleTree");
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

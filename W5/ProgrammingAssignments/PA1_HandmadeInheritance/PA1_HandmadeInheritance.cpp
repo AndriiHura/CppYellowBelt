@@ -1,36 +1,32 @@
-// PA3_ImplementClassDeclaration.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// PA1_HandmadeInheritance.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 
 using namespace std;
 
-class Rect {
+class Animal {
 public:
-    Rect(int width, int height)
-    {
-        width_ = width;
-        height_ = height;
+    Animal(const string name) : Name(name){}
+
+    const string Name;
+};
+
+
+class Dog : public Animal {
+public:
+    Dog(const string s) : Animal(s){}
+    void Bark() {
+        cout << Name << " barks: woof!" << endl;
     }
-
-    int GetArea() const {
-        return width_ * height_;
-    }
-
-    int GetPerimeter() const {
-        return 2 * (width_ + height_);
-    }
-
-    int GetWidth() const { return width_; }
-    int GetHeight() const { return height_; }
-
-private:
-    int width_, height_;
 };
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Dog d("Sahsa");
+    d.Bark();
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
