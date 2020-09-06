@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{35d0de20-5f9b-403f-a2ff-29d57a8b52b2}</ProjectGuid>
-    <RootNamespace>FinalProjectC2</RootNamespace>
+    <ProjectGuid>{14449340-be32-4474-89cf-00d36284e2ba}</ProjectGuid>
+    <RootNamespace>FinalProjectTestFile</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,20 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="condition_parser.cpp" />
-    <ClCompile Include="database.cpp" />
-    <ClCompile Include="date.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="node.cpp" />
-    <ClCompile Include="token.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="condition_parser.h" />
-    <ClInclude Include="database.h" />
-    <ClInclude Include="date.h" />
-    <ClInclude Include="node.h" />
-    <ClInclude Include="test_runner.h" />
-    <ClInclude Include="token.h" />
+    <ClCompile Include="FinalProject_TestFile.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
